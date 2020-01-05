@@ -1,0 +1,31 @@
+{% load static %}
+{% load pwa_extras %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Django progressive web app demo">
+    <meta name="theme-color" content="#fff"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="django progressive app">
+    <link rel="apple-touch-icon" href="{% static '/icons/icon-152x152.png' %}">
+    <title>PWA Test</title>
+    {% load_manifest %}
+</head>
+<body>
+<h1>Hello world!!!</h1>
+<img src="https://uk.scalable.capital/images/3x3i7a9xgm11/2PocShbXRLmU4X4eUE9tud/327305228e81cfff71273eb7559d8a92/hello_world_new_black.png"
+     alt="test image" style="width: 20%;">
+
+{% load_worker %}
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $.getJSON('https://jsonplaceholder.typicode.com/todos/1').done(response => {
+        console.log(response);
+    })
+</script>
+</body>
+</html>
