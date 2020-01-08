@@ -9,17 +9,17 @@ Library for adding progressive web app functionality in your django project.
 - [Usage](#usage)
 - [Links](#links)
 
-##Introduction
+## Introduction
 This Django library adds [progressive web app](https://developers.google.com/web/progressive-web-apps/) functionality in your django project.
 
 When you open your site from your mobile browser, will prompt you to add the site to your home screen as an application.
 
-##Installing
+## Installing
 ```
 pip install django-progressive
 ```
 
-##Configuration
+## Configuration
 Add django-progressive ```django_pwa``` to your installed apps ```INSTALLED_APPS```
 in django ```settings.py```
 ```python
@@ -71,7 +71,7 @@ You can change the default worker location with
 PWA_WORKER_LOCATION = join('static', 'django_pwa_demo', 'service-worker.js')
 ```
 
-##Usage
+## Usage
 Add `django_pwa` urls to your `urls.py`
 ```python
 from django.urls import path, include
@@ -100,7 +100,7 @@ You can add `{% load pwa_extras %}` to use `{% load_manifest %}` template tag to
 </html>
 ```
 
-##Links
+## Links
 
 - [Progressive Web Apps](#https://developers.google.com/web/fundamentals/web-app-manifest)
 - [Wikipedia](#https://en.wikipedia.org/wiki/Progressive_web_application)

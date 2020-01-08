@@ -5,12 +5,13 @@ with open("README.md") as fh:
 
 setuptools.setup(
     name='django-progressive',
-    version='1.0.1',
+    version='1.0.2',
     packages=['django_pwa'],
     include_package_data=True,
     license='GPL License',
     description='Library for adding progressive web app functionality in your django project.',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/m19t12/django-pwa',
     author='Manolis Tsoukalas',
     author_email='emmtsoukalas@gmail.com',
