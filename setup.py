@@ -4,8 +4,8 @@ with open("README.md") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='django-pwa',
-    version='1.0.0',
+    name='django-progressive',
+    version='1.0.1',
     packages=['django_pwa'],
     include_package_data=True,
     license='GPL License',
