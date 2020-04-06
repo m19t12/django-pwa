@@ -1,13 +1,14 @@
-import setuptools
+from setuptools import setup, find_packages
 
 with open("README.md") as fh:
     long_description = fh.read()
 
-setuptools.setup(
+setup(
     name='django-progressive',
-    version='1.0.2',
-    packages=['django_pwa'],
-    include_package_data=True,
+    version='1.0.3',
+    packages=['django_pwa', 'django_pwa.static.django_pwa', 'django_pwa.templates'],
+    package_data={"django_pwa.templates": ["*"],
+                  "django_pwa.static.django_pwa": ["*"]},
     license='GPL License',
     description='Library for adding progressive web app functionality in your django project.',
     long_description=long_description,
