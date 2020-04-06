@@ -5,8 +5,8 @@ with open("README.md") as fh:
 
 setup(
     name='django-progressive',
-    version='1.0.3',
-    packages=['django_pwa', 'django_pwa.static.django_pwa', 'django_pwa.templates'],
+    version='1.0.4',
+    packages=['django_pwa', 'django_pwa.static.django_pwa', 'django_pwa.templates', 'django_pwa.templatetags'],
     package_data={"django_pwa.templates": ["*"],
                   "django_pwa.static.django_pwa": ["*"]},
     license='GPL License',
